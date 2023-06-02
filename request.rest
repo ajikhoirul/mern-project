@@ -1,0 +1,28 @@
+GET http://localhost:8000/users
+
+###
+POST http://localhost:8000/users
+Content-Type: application/json
+
+{
+    "name" : "Aji Khoirul",
+    "email" : "khoirulaji@gmail.com",
+    "gender" : "male"
+}
+
+###
+GET http://localhost:8000/users/6479518af26fc4c11d145482
+
+###
+PATCH http://localhost:8000/users/6479518af26fc4c11d145482
+Content-Type: application/json
+
+{
+    "name" : "Aji Khoirul updated",
+    "email" : "khoirulaji@gmail.com updated",
+    "gender" : "male updated"
+}
+
+
+###
+DELETE http://localhost:8000/users/647951a2c417b0f522cd4e1a
